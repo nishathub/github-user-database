@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github User</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>    
+    <link rel="stylesheet" href="./githubUser.css">
+</head>
+<body>
+    <header>
+        <h1>Github Users Database</h1>
+    </header>
+    <main>
+        <div id="search-box">
+            <input id="search-input" onfocus="" placeholder="Enter Login Name" type="text">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="error-display">
+
+        </div>
+        <div id="content-div">
+            <div id="interface-card">
+                <div id="interface-left">
+                    <div id="user-profile-image-div">
+                        <img id="user-photo" src="" alt="">
+                    </div>
+                </div>
+                <div id="interface-right">
+                    <section id="interface-right-top"></section>
+                    <section id="interface-right-middle"></section>
+                    <section id="interface-right-bottom"></section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer-div">
+        <div>
+            <h4>API Credit : <a href="https://api.github.com/" target="_blank">api.github.com</a></h4>
+            <h4>Prepared by <a href="https://t.me/B42AE02" target="_blank"><span>Nishat</span></a></h4>
+        </div>
+    </footer>
+
+    <script src="./errorMessage.js"></script>
+    <script src="./convertDate.js"></script>
+    <script src="./githubUser.js"></script>
+    <!-- <script src="./loadFollowers.js"></script> -->
+</body>
+</html>

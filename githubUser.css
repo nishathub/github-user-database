@@ -1,0 +1,222 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #caa611;
+    background-image: linear-gradient(112deg, #ca8611 0%, #784cc2 33%, #16A085 66%, #a12782 100%);
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#search-input {
+    margin: 0px;
+    padding: 5px 0 5px 10px;
+    background-color: rgb(123, 194, 207);
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#search-button {
+    margin: 0px;
+    background-color: lightcyan;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color .3s;
+
+}
+
+#search-button:hover {
+    background-color: lightgreen;
+}
+
+#error-display{
+    display: block;
+}
+#error-display h4{
+    text-align: center;
+    color: rgb(171, 5, 5);
+    font-size: 20px;
+    font-family: sans-serif;    
+}
+
+main {
+}
+
+#content-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#interface-card {
+    background-color: rgba(18, 15, 92, 0.554);
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 900px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+    color: rgb(230, 230, 230);
+    font-family: sans-serif;
+}
+
+#interface-card #interface-left {
+
+}
+
+#interface-left #user-profile-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#interface-left #user-profile-image-div img {
+    border: 2px solid lightcyan;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+#interface-card #interface-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#interface-right #interface-right-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+#interface-right #interface-right-top h4{
+    color: rgb(199, 111, 79);
+    color: lightgreen;
+}
+#interface-right-top #join-date span{
+    color: lightgreen;
+}
+
+#interface-right #interface-right-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: rgba(10, 2, 52, 0.319);
+}
+#interface-right #interface-right-middle h4{
+    letter-spacing: 1px;
+    font-weight: lighter;
+    margin: 0;
+}
+#interface-right #interface-right-middle p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+#interface-right #interface-right-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+#interface-right #interface-right-bottom section{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#interface-right #interface-right-bottom a {
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+}
+#footer-div{
+    text-align: center;
+    padding: 10px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+#footer-div div{
+    background-color: rgba(18, 15, 92, 0.554);
+    width: 940px;
+    border-radius: 5px;
+}
+#footer-div h4{
+    font-size: 18px;
+    font-weight: lighter;
+    color: whitesmoke;
+    letter-spacing: 0.5px;
+}
+#footer-div a{
+    color: lightgreen;
+    font-weight: lighter;
+    text-decoration: none;
+}
+#footer-div a span{
+    color: lightgreen;
+    font-weight: lighter;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+
+@media  screen and (max-width: 700px) {
+    #interface-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        
+    }
+    #interface-left #user-profile-image-div {
+        display: flex;
+        height: 200px;
+    }
+    
+    #interface-left #user-profile-image-div img {
+        border-radius: 50%;
+        height: 100%;
+    }
+    #footer-div div{
+        width: 90%;
+        padding: 0 20px;
+    }
+    
+}
+@media  screen and (max-width: 540px) {
+    #interface-right #interface-right-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    #interface-right #interface-right-middle {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 0;
+    }
+    #interface-right #interface-right-bottom {
+        grid-template-columns: 1fr;
+    }
+    #interface-right #interface-right-bottom section{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+}
